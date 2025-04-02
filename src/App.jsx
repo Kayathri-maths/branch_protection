@@ -35,11 +35,10 @@ const WeekOffManager = ({ selectedMonth, staffId }) => {
     }
   }, [staffId]);
 
-  // Handle checkbox change
   const handleCheckboxChange = (day) => {
     setWeekOffs((prev) => ({
       ...prev,
-      [day]: !prev[day], // Toggle the selected day
+      [day]: !prev[day],
     }));
   };
 
